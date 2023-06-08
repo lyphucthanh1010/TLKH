@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="DashBoard.css">  
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+      
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js" integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Dash Board</title>
+</head>
+<body>
+    <nav>
+        <img src="images/uitiot.png"class="logo">
+                <div class="search-box">
+                    <input type="text" placeholder="Search" class="search">
+                </div>
+                <div class="nav-user-icon noti">
+                    <i class="material-icons">notifications</i>
+                </div>
+                <div class="nav-user-icon avatar">
+                    <i class="material-icons">account_circle</i>
+                </div>
+    </nav>
+    <section class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide-1" src="images/Introduction.png"/>
+                <img id="slide-2" src="images/uitiot.png"/>
+                <img id="slide-3" src="images/uitiot.png"/>
+            </div> 
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
+        </div>
+    </section>
+    <!-- <div class="wrapper">
+        <input type="checkbox" id="btn" hidden>
+        <label for="btn" class="menu-btn">
+            <span class="material-icons-sharp" id="btnside">view_sidebar</span>
+            <span class="material-icons-sharp" id="cancel">cancel</span>
+        </label>
+        <div id="sidebar">
+            <div class="title">Side Menu</div>
+            <ul class="list-items">
+                <li><a href="#"><span class="material-icons-sharp">dashboard</span><h4>Dashboard</h4></a></li>
+                <li><a href="#"><span class="material-icons-sharp">currency_exchange</span><h4>Exchanges</h4></a></li>
+                <li><a href="#"><span class="material-icons-sharp">payment</span></a><h4>Transactions</h4></li>
+                <li><a href="#"><span class="material-icons-sharp">message</span></a><h4>Messages</h4></li>
+                <li><a href="#"><span class="material-icons-sharp">settings</span></a><h4>Settings</h4></li>
+            </ul>
+        </div>
+    </div> -->
+    <h2>Category</h2>
+    <div class="fast-payment">
+        <div class="badges">
+            <div id="add" class="badge">
+                <span class="bg-primary"></span>
+                <div>
+                    <i class="material-icons">add</i>
+                    <h5>Add New</h5>
+                </div>
+            </div>
+            <div id="history" class="badge">
+                <span class="bg-primary"></span>
+                <div >
+                    <i class="material-icons">history</i>
+                    <h5>History</h5>
+                </div>
+            </div>
+            <div id="calendar" class="badge">
+                <span class="bg-success"></span>
+                <div>
+                    <i class="material-icons">apps</i>
+                    <h5>Calendar</h5>
+                </div>
+            </div>
+            <div id="statistics" class="badge">
+                <span class="bg-primary"></span>
+                <div>
+                    <i class="material-icons">auto_graph</i>
+                    <h5>Statistics</h5>
+                </div>
+            </div>
+            <div id= "community" class="badge">
+                <span class="bg-danger"></span>
+                <div>
+                    <i class="material-icons">hub</i>
+                    <h5 class="my">Community</h5>
+                </div>
+            </div>
+            <div id="mywallet" class="badge">
+                <span class="bg-danger"></span>
+                <div>
+                    <i class="material-icons">account_circle</i>
+                    <h5 class="my">My Wallet</h5>
+                </div>
+            </div>
+            <div id="exchange" class="badge">
+                <span class="bg-danger"></span>
+                <div >
+                    <span class="material-icons-sharp">currency_exchange</span>
+                    <h5 class="my">Exchange</h5>
+                </div>
+            </div>
+            <div id="message" class="badge">
+                <span class="bg-danger"></span>
+                <div >
+                    <i class="material-icons">message</i>
+                    <h5 class="my">Message</h5>
+                </div>
+            </div>
+            <div id="notification" class="badge">
+                <span class="bg-danger"></span>
+                <div >
+                    <i class="material-icons">notifications</i>
+                    <h5 class="my">Notification</h5>
+                </div>
+            </div>
+            <div id="settings" class="badge">
+                <span class="bg-danger"></span>
+                <div>
+                    <i class="material-icons">settings</i>
+                    <h5 class="my">Settings</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Subjects</h3>
+                        <ul>
+                            <li><a href="#">SE114.N21.PMCL</a></li>
+                            <li><a href="#">Nhập môn ứng dụng di động</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">20521916 - Lý Phúc Thành</a></li>
+                            <li><a href="#">20521462 - Cao Anh Khoa</a></li>
+                            <li><a href="#">21522289 - Nguyễn Hoàng Linh</a></li>
+                            <li><a href="#">20521312 - Nguyễn Lê Đắc Hiệp</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social">
+                        <a href="https://www.facebook.com/zrx.lpt"><i class="icon ion-social-facebook"></i></a>
+                        <a href="https://www.facebook.com/caokhoa.ne"><i class="icon ion-social-facebook"></i></a>
+                        <a href="https://www.facebook.com/nhlinhseuit"><i class="icon ion-social-facebook"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100011121402369"><i class="icon ion-social-facebook"></i></a>
+                        <p class="copyright">UIT © 2023</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+<script src="DashBoard.js" type="module"></script>
+</html>
