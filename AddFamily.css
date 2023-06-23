@@ -14,29 +14,45 @@ html, body{
     display: flex;
     flex-direction: column;
 }
-.side-bar .menu a:hover i {
-  margin-left: 2rem;
-}
-.side-bar .menu a:hover i{
-  color: #ffffff;
-}
-.side-bar .menu div:hover a{
-  color: #ffffff;
-  font-weight: 500;
-}
 nav{
     display: flex;
-    height: fit-content;
+    height: 70px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background: linear-gradient(to right, #dcccf3, #b3e5ef, #add2d0);
-    position: fixed; /* Đặt vị trí cứng */
+    padding: 5px 5%;
+    position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
-    /* position: relative; */
-    margin-bottom: 40px;
     z-index: 100;
+}
+
+.search{
+    outline: none;
+    width: 150px;
+    
+}
+.search-box input{
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    outline:none;
+    border: 0;
+}
+.noti{
+    cursor: pointer;
+    width: 40px;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 40px;
+    margin-top: 10px;
+    max-width: 50px;
+    max-height: 50px;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+    margin-right: 45px;
 }
 .avatar{
     border-top-right-radius: 50%;
@@ -50,6 +66,11 @@ nav{
     height: 40px;
     max-width: 50px;
     max-height: 50px;
+}
+.header-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #sidebar{
     position: fixed;
@@ -167,149 +188,4 @@ nav{
     font-size: 20px;
     margin: 25px;
     cursor: pointer;
-  }
-  
-  .data{
-    display: flex;
-    position: relative;
-    width: 100%;
-    background-color: #ececec;
-    margin-right: 10px;
-    margin-top: 80px;
-    margin-bottom: 0;
-  }
-  .intro{
-    display: flex;
-    position: relative;
-    justify-content: center;
-  }
-  .head {
-    padding-top:  20px;
-    padding-left: 20px;
-    background-color: white;
-    padding-bottom: 20px;
-}
-
-.header {
-    display: flex;
-}
-
-
-.totalmoney {
-    color: #1DB7AE;
-    margin-top: 10px;
-}
-
-.month {
-    color: #1DB7AE;
-    margin-top: 10px;
-}
-#moneydisplay{
-  margin-top: 10px;
-}
-.drop {
-    margin-left: 20px;
-}
-.data + div {
-  margin-top: 10px; /* Đặt margin-top về 0 cho các div tiếp theo */
-}
-.line {
-    height: 15x;
-    width: 2px !important;
-    background-color: #ccc;
-    margin-left: 100px;
-}
-
-.calendar {
-    margin-left: 100px;
-}
-
-.bar {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-}
-
-.seperate {
-    width: auto;
-    height: 1px;
-    background-color: #ccc;
-    margin-top: 10px;
-    margin-left: -20px;
-}
-
-.total {
-    margin-top: 20px;
-}
-
-.income {
-    display: flex;
-    color: #1DB7AE;
-}
-
-
-.money {
-    position: absolute;
-    right: 20px;
-}
-
-.seperateTotal {
-    width: auto;
-    height: 1px;
-    background-color: #ccc;
-    margin-top: 5px;
-    margin-left: 370px;
-}
-
-.balance {
-    display: flex;
-    margin-top: 10px;
-    color: #8c8989;
-}
-
-.blancemoney {
-    position: absolute;
-    right: 20px;
-}
-
-.history {
-    margin-top: 20px;
-    padding-top:  20px;
-    padding-left: 20px;
-    background-color: white;
-    padding-bottom: 20px;
-}
-
-.dayHistory {
-    display: flex;
-}
-
-#displaytexxt p{
-    text-align: left;
-    margin-left: 10px;
-    color: #1DB7AE;
-}
-.data-item h3{
-  text-align: left;
-  margin-top: 10px;
-    margin-left: 10px;
-    color: #dcccf3;
-}
-.data-item p{
-  text-align: left;
-  margin-top: 10px;
-  margin-left: 10px;
-  color: #1DB7AE;
-}
-#displaytexxt h3{
-  text-align: left;
-    margin-left: 10px;
-    color: #dcccf3;
-}
-.desc {
-    font-weight: 400;
-}
-
-.data-item .blancemoney-sub {
-    color: rgb(233, 114, 114);
-}
+  } 

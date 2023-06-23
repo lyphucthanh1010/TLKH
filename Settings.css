@@ -30,13 +30,38 @@ nav{
     align-items: center;
     justify-content: space-between;
     background: linear-gradient(to right, #dcccf3, #b3e5ef, #add2d0);
-    position: fixed; /* Đặt vị trí cứng */
+    position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
-    /* position: relative; */
-    margin-bottom: 40px;
     z-index: 100;
+}
+
+.search{
+    outline: none;
+    width: 150px;
+    
+}
+.search-box input{
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    outline:none;
+    border: 0;
+}
+.noti{
+    cursor: pointer;
+    width: 40px;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 40px;
+    margin-top: 10px;
+    max-width: 50px;
+    max-height: 50px;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+    margin-right: 45px;
 }
 .avatar{
     border-top-right-radius: 50%;
@@ -168,148 +193,133 @@ nav{
     margin: 25px;
     cursor: pointer;
   }
+  .header {
+    padding: 20px 30px;
+    display: flex;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 2px 2px 4px 1px rgb(193, 159, 159);
+    box-shadow: 2px 2px 4px 1px rgb(217, 215, 215);
+}
+
+.header i {
+    font-size: 20px;
+    display: block;    
+}
+
+.header-text {
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* BODY */
+.body {
+    margin-left: 40px;
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.body h3{
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.field {
+    color: #1DB7AE;
+}
+
+.sub {
+    margin-top: -40px;
+    color: grey;
+}
+
+.toggle {
+    display: flex;   
+}
+
+.switch {
+    transform: translateY(-5px);
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+  }
   
-  .data{
-    display: flex;
-    position: relative;
-    width: 100%;
-    background-color: #ececec;
-    margin-right: 10px;
-    margin-top: 80px;
-    margin-bottom: 0;
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
   }
-  .intro{
-    display: flex;
-    position: relative;
-    justify-content: center;
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
   }
-  .head {
-    padding-top:  20px;
-    padding-left: 20px;
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
     background-color: white;
-    padding-bottom: 20px;
-}
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #1DB7AE;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #1DB7AE;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 30px;
+    align-items: center;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
 
-.header {
-    display: flex;
-}
-
-
-.totalmoney {
-    color: #1DB7AE;
-    margin-top: 10px;
-}
-
-.month {
-    color: #1DB7AE;
-    margin-top: 10px;
-}
-#moneydisplay{
-  margin-top: 10px;
-}
-.drop {
-    margin-left: 20px;
-}
-.data + div {
-  margin-top: 10px; /* Đặt margin-top về 0 cho các div tiếp theo */
-}
-.line {
-    height: 15x;
-    width: 2px !important;
-    background-color: #ccc;
-    margin-left: 100px;
-}
-
-.calendar {
-    margin-left: 100px;
-}
-
-.bar {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-}
-
-.seperate {
-    width: auto;
+  .line {
     height: 1px;
-    background-color: #ccc;
-    margin-top: 10px;
-    margin-left: -20px;
-}
+    background-color: rgb(194, 192, 192);
+  }
 
-.total {
-    margin-top: 20px;
-}
-
-.income {
+  .logout {
     display: flex;
-    color: #1DB7AE;
-}
+  }
 
-
-.money {
+  .out {
     position: absolute;
-    right: 20px;
-}
-
-.seperateTotal {
-    width: auto;
-    height: 1px;
-    background-color: #ccc;
-    margin-top: 5px;
-    margin-left: 370px;
-}
-
-.balance {
-    display: flex;
-    margin-top: 10px;
-    color: #8c8989;
-}
-
-.blancemoney {
-    position: absolute;
-    right: 20px;
-}
-
-.history {
-    margin-top: 20px;
-    padding-top:  20px;
-    padding-left: 20px;
-    background-color: white;
-    padding-bottom: 20px;
-}
-
-.dayHistory {
-    display: flex;
-}
-
-#displaytexxt p{
-    text-align: left;
-    margin-left: 10px;
+    right: 10px;
+    font-size: 30px;
     color: #1DB7AE;
-}
-.data-item h3{
-  text-align: left;
-  margin-top: 10px;
-    margin-left: 10px;
-    color: #dcccf3;
-}
-.data-item p{
-  text-align: left;
-  margin-top: 10px;
-  margin-left: 10px;
-  color: #1DB7AE;
-}
-#displaytexxt h3{
-  text-align: left;
-    margin-left: 10px;
-    color: #dcccf3;
-}
-.desc {
-    font-weight: 400;
-}
-
-.data-item .blancemoney-sub {
-    color: rgb(233, 114, 114);
-}
+    cursor: pointer;
+  }

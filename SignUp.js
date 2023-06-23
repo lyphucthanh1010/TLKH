@@ -35,7 +35,7 @@ const back_text = document.getElementById("back").addEventListener("click", func
     event.preventDefault();
   });
   async function back() {
-    window.location.href ="SE121.html"
+    window.location.href ="SE114.html"
   }
   const SignupBtn = document.getElementById("signup_btn").addEventListener("click", function(event){
     signup();
